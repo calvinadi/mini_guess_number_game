@@ -14,10 +14,11 @@ guess_count = 0
 correct_number = random.randint(1,100)
 
 while guess_input != correct_number:
-  guess_count +=1
   if(guess_input < correct_number):
+    guess_count +=1
     print("your guess is too low, try again!")
   else:
+    guess_count +=1
     print("your guess is too big, try again!")
   guess_input = int(input("input your guess number: "))
 
